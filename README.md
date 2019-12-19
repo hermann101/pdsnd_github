@@ -33,10 +33,10 @@ files used it is the data files chicago.csv, new_york_city.csv, washington.csv.
 ### Credits
 the websites visited :
 
-- http://www.python-simple.com/
-- https://stackoverflow.com
-- https://www.geeksforgeeks.org
-- https://www.science-emergence.com
+- *http://www.python-simple.com/*
+- *https://stackoverflow.com*
+- *https://www.geeksforgeeks.org*
+- *https://www.science-emergence.com*
 
 ### How to execute
 use python 3
