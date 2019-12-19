@@ -318,10 +318,11 @@ def user_stats(df, city):
 
 def main():
     while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+        city, month, day = get_filters()	# call function load data	
+        df = load_data(city, month, day)	# load data in dataframe
 
-        time_stats(df)
+	# call function for answer the question
+        time_stats(df)				
         station_stats(df)
         trip_duration_stats(df, month, day)
         user_stats(df, city)
