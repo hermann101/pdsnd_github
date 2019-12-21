@@ -218,13 +218,13 @@ def station_stats(df):
 def Duration(times):
     """Displays the days, hours, minutes and seconds from the provided seconds."""
     
-    day = times // (24 * 3600)
-    time = times % (24 * 3600)
-    hour = times // 3600
+    day = times // (24 * 3600)  # convert input times in day
+    time = times % (24 * 3600)  
+    hour = times // 3600	# convert input time in hour 
     time %= 3600
-    minutes = times // 60
+    minutes = times // 60	# convert input time in minutes
     time %= 60
-    seconds = times
+    seconds = times		# convert input times in seconds
     
     print("{} days, {}h : {}m : {}s".format(int(day), int(hour), int(minutes), int(seconds)));
     
@@ -318,10 +318,11 @@ def user_stats(df, city):
 
 def main():
     while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+        city, month, day = get_filters()	# call function load data	
+        df = load_data(city, month, day)	# load data in dataframe
 
-        time_stats(df)
+	# call function for answer the question
+        time_stats(df)				
         station_stats(df)
         trip_duration_stats(df, month, day)
         user_stats(df, city)
